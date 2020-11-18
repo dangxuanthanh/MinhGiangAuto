@@ -1,0 +1,211 @@
+header
+	.header_top
+		position: fixed
+		width: 100%
+		z-index: 5
+		transition: .4s all
+		@media screen and ( max-width: 1280px )
+			display: none
+		.header
+			height: 120px
+			display: flex
+			
+			@media screen and ( max-width: 1280px )
+				height: 80px
+			.header_left
+				flex: 1 0 45%
+				display: flex
+				justify-content: start	
+				align-items: center
+				@media screen and ( max-width: 1280px )
+					display: none
+			.header_logo
+				flex: 1
+				display: flex
+				justify-content: center
+				padding: 0 10px
+				padding-top: 5px
+				@media screen and ( max-width: 1280px )
+					order: 1
+				.logo-header
+					width: 105px
+					img
+						width: 100%
+			.header_right
+				flex: 1 0 45%
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				@media screen and ( max-width: 1280px )
+					order: 2
+				.header_btn
+					padding: 8px 10px
+					margin-left: 30px
+					background-color: #00415f
+					color: #fff
+					cursor: pointer
+					display: none
+					@media screen and ( max-width: 1280px )
+						display: unset
+	.header_bot
+		position: fixed
+		width: 100%
+		top: -150px
+		z-index: 5
+		background-color: #2e3091
+		transition: .4s all
+		@media screen and ( max-width: 1280px )
+			top: 0 !important
+			transition: unset
+		.header
+			height: 80px
+			display: flex
+			@media screen and ( max-width: 576px )
+				height: 50px
+			.header_left
+				flex: 1 0 45%
+				display: flex
+				justify-content: start	
+				align-items: center
+				@media screen and ( max-width: 1280px )
+					display: none
+			.header_logo
+				flex: 1
+				display: flex
+				justify-content: center
+				padding: 0 20px
+				padding-top: 5px
+				@media screen and ( max-width: 1280px )
+					order: 1
+					padding: 0
+					justify-content: start
+				.logo-header
+					width: 80px
+					@media screen and ( max-width: 576px )
+						width: 50px
+					img
+						width: 100%
+			.header_right
+				flex: 1 0 45%
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				@media screen and ( max-width: 1280px )
+					order: 2
+				.mobile-toggle
+					display: none
+					@media screen and ( max-width: 1280px )
+						display: flex
+						align-items: center
+					.header_btn
+						width: 4rem
+						height: 4rem
+						margin-left: 2rem
+						background-color: #fff
+						color: #2e3091
+						cursor: pointer
+						@include center
+						
+	.nav_menu-moblie, .nav_menu-1, .nav_menu-2
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		height: 50px
+		@media screen and ( max-width: 1280px )
+			flex-direction: column
+			height: unset
+			justify-content: center
+		li
+			text-transform: uppercase
+			list-style: none
+			@media screen and ( max-width: 1280px )
+				padding: 10px 0
+			a
+				color: #fff
+				font-size: 16px
+				font-weight: 700
+				position: relative
+				@media screen and ( max-width: 1280px )
+					color: $blue
+				&:after
+					position: absolute
+					bottom: -5px
+					left: 0
+					right: 0
+					margin: auto
+					width: 0%
+					content: ''
+					color: transparent
+					background: #fefefe
+					height: 2px
+					transition: all .2s
+					@media screen and ( max-width: 1280px )
+						background: $blue
+				&:hover
+					&:after
+						width: 100%
+			span
+				color: #fff
+	.nav_menu-moblie
+		@media screen and ( max-width: 1280px )
+			display: none
+	.search_box
+		span
+			color: #fff
+			font-size: 20px
+
+	.menu_mobile
+		width: 50%
+		height: 100%
+		background-color: #fff
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		display: none
+		@media screen and ( max-width: 1280px )
+			width: 50%
+			display: unset
+		@media screen and ( max-width: 576px )
+			width: 100%
+		.header_btn
+			position: absolute
+			top: 0
+			right: 0
+			width: 4rem
+			height: 4rem
+			@include center
+			background-color: #2e3091
+			color: #fff
+			cursor: pointer
+		.mobile-wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			height: 100%
+			justify-content: center
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		z-index: 9
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+		// @media screen and ( max-width: 1280px )
+		// 	display: unset
+	.overlay.show
+		@media screen and ( max-width: 1280px )
+			display: block

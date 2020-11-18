@@ -1,0 +1,59 @@
+.block_s-1
+    padding-top: 6rem
+    padding-bottom: 16.5rem
+    background-image: url("../img/bg/s-1.png")
+    background-position: bottom
+    background-repeat: no-repeat
+    background-size: cover
+
+.block_s-2
+    padding-top: 6rem
+    padding-bottom: 16.5rem
+    background-image: url("../img/bg/s-2.png")
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    .row
+        &:nth-child(2n)
+            .col-lg-6
+                &:nth-child(2n+1)
+                    order: 2
+    .block_content-circle, .block_content
+        .content
+            list-style: none
+            padding: 2rem 0
+            li
+                position: relative
+                padding-left: 1rem
+                &:before
+                    content: "•"
+                    color: #111111
+                    top: 0
+                    font-weight: 800
+                    position: absolute
+                    left: 0
+                    font-size: 1.6rem
+                    @media screen and ( max-width: 576px )
+                        top: 3px
+                p
+                    font-size: 1.8rem
+    .block_content-circle
+        .content
+            li
+                padding-left: 2.5rem
+                &:before
+                    content: "\eb7d"
+                    font-family: 'remixicon'
+                    color: #ec1923
+                    top: 2px
+                p
+                    color: #fff
+.block_s-4
+    padding-top: 6rem
+    padding-bottom: 16.5rem
+    background-image: url("../img/bg/s-4.png")
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative

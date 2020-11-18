@@ -1,0 +1,86 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Space Grotesk', sans-serif
+    color: #111111
+
+html
+    font-size: 10px
+    @media screen and ( max-width: 576px )
+        font-size: 8px
+main
+    @media screen and ( max-width: 1280px )
+        margin-top: 80px
+    @media screen and ( max-width: 576px )
+        margin-top: 50px
+.container
+    max-width: 1260px
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+$blue: #2e3091
+.column-center
+    display: flex
+    flex-direction: column
+    align-items: center
+    .content, .content-detail
+        text-align: center
+.pt-30
+    padding-top: 30rem
+.text-white
+    color: #fff
+.block_title
+    .title
+        h2
+            font-size: 3.6rem
+            text-transform: uppercase
+            font-weight: 700
+    .content
+        font-size: 2.4rem
+        font-weight: 500
+        padding-top: 2.5rem
+    .content-detail
+        font-size: 1.8rem
+        padding: 2.5rem 0
+.read-more
+    @include center
+    width: 16rem
+    height: 5rem
+    border: 4px solid $blue
+    text-transform: uppercase
+    color: $blue
+    font-weight: 700
+    font-size: 1.4rem
+    transition: .3s all
+    &:hover
+        background-color: $blue
+        color: #fff
+        .arrow
+            filter: brightness(0) invert(1)
+            transition: .3s all
+    .arrow
+        padding-left: 1rem
+        filter: brightness(1) invert(0)
+.read-more_white
+    @include center
+    width: 16rem
+    height: 5rem
+    border: 4px solid #fff
+    text-transform: uppercase
+    color: #fff
+    font-weight: 700
+    font-size: 1.4rem
+    transition: .3s all
+    &:hover
+        background-color: $blue
+        color: #fff
+        border: 4px solid $blue
+        .arrow
+            filter: brightness(0) invert(1)
+            transition: .3s all
+    .arrow
+        padding-left: 1rem
+        filter: brightness(0) invert(1)

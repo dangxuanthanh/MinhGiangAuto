@@ -60,6 +60,33 @@ section.block_s-2
 					a.read-more(href="#") Xem thêm
 						img.arrow(src="./img/banner/arrow.png")
 			.col-lg-6
+//- section.block_s-3
+//- 	.container
+//- 		.block_title.column-center
+//- 			.title
+//- 				h2 Lịch trình thi đấu
+//- 		.block_timeline
+//- 			.timeline
+//- 				.timeline-content
+//- 					.timeline-article
+//- 						.content-left-container
+//- 							.content-left
+//- 								p Thứ 4, ngày 18/11/2020
+//- 						.content-right-container
+//- 							.content-right
+//- 								p Các đội tập kết xe Các đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xe
+//- 						.meta-date
+//- 							img(src="./img/wheel.png" alt="")
+//- 				.timeline-content
+//- 					.timeline-article
+//- 						.content-left-container
+//- 							.content-left
+//- 								p Thứ 4, ngày 18/11/2020
+//- 						.content-right-container
+//- 							.content-right
+//- 								p Các đội tập kết xe Các đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xe
+//- 						.meta-date
+//- 							img(src="./img/wheel.png" alt="")
 section.block_s-4
 	.container
 		.block_title.column-center
@@ -104,7 +131,7 @@ section.block_s-5
 		.block_title.column-center
 			.title
 				h2 Bảng kết quả
-		.x-auto
+		.x-auto.mb-3
 			table.block_result-board
 				tbody
 					tr.head.bg-blue
@@ -210,22 +237,28 @@ section.block_s-7
 		.block_title.column-center
 			.title
 				h2 Tin tức
-		.swiper-container
-			.swiper-wrapper
-				-for(i=1;i<=5;i++)
-					.swiper-slide
-						.news-card
-							.new-img
-								.img.opacity 
-									img(src="./img/new-1.png", alt="")
-							.content-news
-								.date
-									span.lnr.lnr-calendar-full
-									time 5.11.2020
-								.caption
-									a(href="") Thử thách cực hạn - Đỉnh cao của sự đơn giản
-								a(href="#").readmore-news Xem thêm
-									span.lnr.lnr-arrow-right
+		.news_slide
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1;i<=5;i++)
+						.swiper-slide
+							.news-card
+								.new-img
+									.img.opacity 
+										img(src="./img/new-1.png" alt="")
+								.content-news
+									.date
+										span.lnr.lnr-calendar-full
+										time 5.11.2020
+									.caption
+										a(href="") Thử thách cực hạn - Đỉnh cao của sự đơn giản
+									a(href="#").readmore-news Xem thêm
+										span.lnr.lnr-arrow-right
+			.nav-arrow
+				.nav-arrow-prev
+					img.arrow(src="./img/banner/arrow-left.png")
+				.nav-arrow-next
+					img.arrow(src="./img/banner/arrow.png")
 section.block_s-8
 	.container
 		.block_title.column-center
@@ -233,21 +266,24 @@ section.block_s-8
 				h2 Video
 		.row
 			-for(i=1;i<=7;i++)
-				.col-lg-3.col-sm-6
+				.col-lg-3.col-sm-6.col-xs-6
 					.about-figure
 						.img-wrapper
-							img(src="./img/video-1.png", alt="")
+							img(src="./img/video-1.png" alt="")
 						.content
 							.date
 								span.lnr.lnr-film-play
 								time 05.11.2020
 							p HTV Challenge Cup 2020 - Sân chơi địa hình độc đáo nhất Việt Nam đã quay trở lại!
-			.col-lg-3.col-sm-6
+			.col-lg-3.col-sm-6.col-xs-6
 				.about-figure
 					.img-wrapper
-						img(src="img/bg/s-4.png", alt="")
+						img(src="img/video-1.png" alt="")
 					.content
 						.date
 							span.lnr.lnr-film-play
 							time 05.11.2020
 						p HTV Challenge Cup 2020 - Sân chơi địa hình độc đáo nhất Việt Nam đã quay trở lại!
+		.column-center
+			a.read-more(href="#") Xem thêm
+				img.arrow(src="./img/banner/arrow.png")

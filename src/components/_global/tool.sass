@@ -1,0 +1,43 @@
+.block__tool
+	position: fixed
+	top: 25%
+	right: -370px
+	width: 400px
+	height: 400px
+	z-index: 5
+	display: flex
+	align-items: start
+	transform: rotate(-90deg)
+	ul
+		padding: 0
+		list-style: none
+		display: flex
+		z-index: 5
+		// -webkit-writing-mode: vertical-rl
+		
+		li
+			margin-right: 2px
+			a
+				display: flex
+				align-items: center
+				height: 30px
+				width: auto
+				background-color: #01af4c
+				color: #fff
+				font-size: 14px
+				font-weight: 700
+				padding: 0 10px
+			.icon
+				transform: rotate(90deg)
+				height: 30px
+				width: 30px
+				@include center
+				background-color: #2e3091
+			&:nth-child(3)
+				margin: 0
+				.icon
+					background-color: #ec1923
+			&:nth-child(4)
+				a
+					background-color: #ec1923
+				

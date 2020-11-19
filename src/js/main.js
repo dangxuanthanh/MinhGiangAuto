@@ -54,7 +54,7 @@ function scrollFunction() {
 }
 
 function swiperInit() {
-    var brandSwiper = new Swiper(".block_s-7 .swiper-container", {
+    var brandSwiper = new Swiper(".news_slide .swiper-container", {
         // Optional parameters
         speed: 1000,
         spaceBetween: 30,
@@ -62,8 +62,8 @@ function swiperInit() {
         //     delay: 2000,
         // },
         navigation: {
-            nextEl: ".block_s-7 .nav-arrow-next",
-            prevEl: ".block_s-7 .nav-arrow-prev",
+            nextEl: ".news_slide .nav-arrow-next",
+            prevEl: ".news_slide .nav-arrow-prev",
         },
         breakpointsInverse: true,
         breakpoints: {

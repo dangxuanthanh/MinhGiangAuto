@@ -66,8 +66,188 @@ section.block_s-4
 			.title
 				h2.text-white Giải thưởng
 		.row
-			.col-lg-4
-			.col-lg-4
+			.col-xl-4.df_ai-center
+				.block_option
+					ul
+						li
+							.option Hạng chuyên nghiệp
+						li
+							.option Hạng nâng cấp bán tải và xe 2 cầu (không phải bán tải)
+						li
+							.option Hạng nguyên bản bán tải và xe 2 cầu (không phải bán tải)
+						li
+							.option Giải thưởng khác
+			.col-xl-4.df_ai-center
 				.card-img
-					img(src="./img/img-s4.png", alt="")
-			.col-lg-4
+					img(src="./img/img-s4.png" alt="")
+			.col-xl-4.df_ai-center
+				.block_content
+					ul.content
+						.title Hạng chuyên nghiệp
+						.title-content Dự kiến 12 đường đua
+							.flow
+								img(src="img/flow.png" alt="")
+						li
+							p
+								strong Giải nhất:
+								|  cúp, huy chương, mascot (biểu tượng giải) và 120.000.000 đồng
+						li
+							p
+								strong Giải nhì:
+								|  cúp, huy chương, mascot và 60.000.000 đồng
+						li
+							p
+								strong Giải ba:
+								|  cúp, huy chương, mascot và 30.000.000 đồng
+section.block_s-5
+	.container
+		.block_title.column-center
+			.title
+				h2 Bảng kết quả
+		.x-auto
+			table.block_result-board
+				tbody
+					tr.head.bg-blue
+						td(colspan='10')
+							.title GIẢI ĐUA XE ĐỊA HÌNH HTV CHALLENGE CUP 2020
+							.content Kết quả chi tiết đường đua SS-00 Hạng chuyên nghiệp
+					tr.name
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Số xe
+						td(rowspan='2') Đội đua
+						td(colspan='2') Vận động viên
+						td(rowspan='2') Điểm đường đua
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+					tr.name
+						td Lái chính
+						td Lái phụ
+					-for(i=1;i<=5;i++)
+						tr
+							td 1
+							td 201
+							td Bình xập xình
+							td Ngô Xuân Bình
+							td Nguyễn Thiên Hỷ
+							td 100
+							td 00:00,00
+							td 0
+							td 100
+							td 0
+		.x-auto
+			table.block_result-board
+				tbody
+					tr.head.bg-green
+						td(colspan='10')
+							.title GIẢI ĐUA XE ĐỊA HÌNH HTV CHALLENGE CUP 2020
+							.content Kết quả chi tiết đường đua SS-00 Hạng chuyên nghiệp
+					tr.name
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Số xe
+						td(rowspan='2') Đội đua
+						td(colspan='2') Vận động viên
+						td(rowspan='2') Điểm đường đua
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+					tr.name
+						td Lái chính
+						td Lái phụ
+					-for(i=1;i<=5;i++)
+						tr
+							td 1
+							td 201
+							td Bình xập xình
+							td Ngô Xuân Bình
+							td Nguyễn Thiên Hỷ
+							td 100
+							td 00:00,00
+							td 0
+							td 100
+							td 0
+section.block_s-5
+	.container
+		.block_title.column-center
+			.title
+				h2 Bảng tổng kết
+		.x-auto
+			table.block_result-board
+				tbody
+					tr.head.bg-red
+						td(colspan='10')
+							.title GIẢI ĐUA XE ĐỊA HÌNH HTV CHALLENGE CUP 2020
+							.content Kết quả chi tiết đường đua SS-00 Hạng chuyên nghiệp
+					tr.name
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Số xe
+						td(rowspan='2') Đội đua
+						td(colspan='2') Vận động viên
+						td(rowspan='2') Điểm đường đua
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+						td(rowspan='2') Xếp hạng
+					tr.name
+						td Lái chính
+						td Lái phụ
+					-for(i=1;i<=5;i++)
+						tr
+							td 1
+							td 201
+							td Bình xập xình
+							td Ngô Xuân Bình
+							td Nguyễn Thiên Hỷ
+							td 100
+							td 00:00,00
+							td 0
+							td 100
+							td 0
+section.block_s-7
+	.container
+		.block_title.column-center
+			.title
+				h2 Tin tức
+		.swiper-container
+			.swiper-wrapper
+				-for(i=1;i<=5;i++)
+					.swiper-slide
+						.news-card
+							.new-img
+								.img.opacity 
+									img(src="./img/new-1.png", alt="")
+							.content-news
+								.date
+									span.lnr.lnr-calendar-full
+									time 5.11.2020
+								.caption
+									a(href="") Thử thách cực hạn - Đỉnh cao của sự đơn giản
+								a(href="#").readmore-news Xem thêm
+									span.lnr.lnr-arrow-right
+section.block_s-8
+	.container
+		.block_title.column-center
+			.title
+				h2 Video
+		.row
+			-for(i=1;i<=7;i++)
+				.col-lg-3.col-sm-6
+					.about-figure
+						.img-wrapper
+							img(src="./img/video-1.png", alt="")
+						.content
+							.date
+								span.lnr.lnr-film-play
+								time 05.11.2020
+							p HTV Challenge Cup 2020 - Sân chơi địa hình độc đáo nhất Việt Nam đã quay trở lại!
+			.col-lg-3.col-sm-6
+				.about-figure
+					.img-wrapper
+						img(src="img/bg/s-4.png", alt="")
+					.content
+						.date
+							span.lnr.lnr-film-play
+							time 05.11.2020
+						p HTV Challenge Cup 2020 - Sân chơi địa hình độc đáo nhất Việt Nam đã quay trở lại!

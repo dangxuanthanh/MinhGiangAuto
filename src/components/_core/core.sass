@@ -2,13 +2,22 @@
     padding: 0
     margin: 0
     box-sizing: border-box
-    font-family: 'Space Grotesk', sans-serif
-    color: #111111
 
-html
+html, body
     font-size: 10px
     @media screen and ( max-width: 576px )
         font-size: 8px
+html, body 
+    font-size: 10px
+    color: #111111
+    font-family: 'Space Grotesk', sans-serif
+    font-weight: 400
+    @media screen and ( max-width: 1260px )
+        font-size: 9px
+    @media screen and ( max-width: 1025px )
+        font-size: 8px
+    @media screen and ( max-width: 768px )
+        font-size: 7px
 main
     @media screen and ( max-width: 1280px )
         margin-top: 80px
@@ -28,20 +37,30 @@ $blue: #2e3091
     align-items: center
     .content, .content-detail
         text-align: center
+
+
 .pt-30
     padding-top: 30rem
 .text-white
     color: #fff
+.df_ai-center
+    display: flex
+    align-items: center
+    @media screen and ( max-width: 1199.98px )
+        justify-content: center
+.x-auto
+    width: 100%
+    overflow-x: auto
 .block_title
     .title
         h2
             font-size: 3.6rem
             text-transform: uppercase
             font-weight: 700
+            padding-bottom: 2.5rem
     .content
         font-size: 2.4rem
         font-weight: 500
-        padding-top: 2.5rem
     .content-detail
         font-size: 1.8rem
         padding: 2.5rem 0
@@ -54,7 +73,7 @@ $blue: #2e3091
     color: $blue
     font-weight: 700
     font-size: 1.4rem
-    transition: .3s all
+    transition: .2s all
     &:hover
         background-color: $blue
         color: #fff
@@ -73,7 +92,7 @@ $blue: #2e3091
     color: #fff
     font-weight: 700
     font-size: 1.4rem
-    transition: .3s all
+    transition: .2s all
     &:hover
         background-color: $blue
         color: #fff
@@ -84,3 +103,25 @@ $blue: #2e3091
     .arrow
         padding-left: 1rem
         filter: brightness(0) invert(1)
+.readmore-news
+    width: 11rem
+    display: flex
+    align-items: start
+    justify-content: space-between
+    font-size: 1.4rem
+    color: #999999
+    text-transform: uppercase
+    span
+        color: #999999
+        font-size: 2rem
+    &:hover
+        color: $blue
+        span
+            color: $blue
+.opacity
+	transition: .3s all ease-in-out
+	&:hover
+		opacity: .7
+	img
+		opacity: 1
+		transition: .3s all ease-in-out

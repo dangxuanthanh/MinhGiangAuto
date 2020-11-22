@@ -60,33 +60,28 @@ section.block_s-2
 					a.read-more(href="#") Xem thêm
 						img.arrow(src="./img/banner/arrow.png")
 			.col-lg-6
-//- section.block_s-3
-//- 	.container
-//- 		.block_title.column-center
-//- 			.title
-//- 				h2 Lịch trình thi đấu
-//- 		.block_timeline
-//- 			.timeline
-//- 				.timeline-content
-//- 					.timeline-article
-//- 						.content-left-container
-//- 							.content-left
-//- 								p Thứ 4, ngày 18/11/2020
-//- 						.content-right-container
-//- 							.content-right
-//- 								p Các đội tập kết xe Các đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xe
-//- 						.meta-date
-//- 							img(src="./img/wheel.png" alt="")
-//- 				.timeline-content
-//- 					.timeline-article
-//- 						.content-left-container
-//- 							.content-left
-//- 								p Thứ 4, ngày 18/11/2020
-//- 						.content-right-container
-//- 							.content-right
-//- 								p Các đội tập kết xe Các đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xeCác đội tập kết xe
-//- 						.meta-date
-//- 							img(src="./img/wheel.png" alt="")
+section.block_s-3
+	.container
+		.block_title.column-center
+			.title
+				h2 Lịch trình thi đấu
+		.block_timeline
+			-for(i=1;i<=5;i++)
+				.timeline
+					.timeline-content
+						.date
+							time Thứ 4, ngày 18/11/2020
+					.timeline-content
+						.block_content
+							ul.content
+								li
+									p Từ 08h00 đến 09h00: diễu hành tại phim trường Củ Chi
+								li
+									p Từ 09h00 đến 16h30: nhận bộ RACE-KIT (decal dán xe, số xe thi đấu, thẻ vđv, áo thi đấu, chặn tời, các quà tặng khác nếu có) và kiểm tra xe thi đấu 
+								li
+									p Từ 16h30 đến 19h00: họp kỹ thuật
+								li
+									p Từ 16h30 đến 19h00: họp kỹ thuật
 section.block_s-4
 	.container
 		.block_title.column-center

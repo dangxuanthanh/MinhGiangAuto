@@ -61,6 +61,7 @@
 						</xsl:attribute>
 						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 					</p>
+					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				</div>
 			</div>
 		</div>

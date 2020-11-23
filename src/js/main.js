@@ -35,7 +35,7 @@ function mappingMenu2() {
 		mobileWrapper: ".mobile-wrapper",
 		mobileMethod: "appendTo",
 		desktopWrapper: ".header_right",
-		desktopMethod: "appendTo",
+		desktopMethod: "prependTo",
 		breakpoint: 1281
 	}).watch();
 }

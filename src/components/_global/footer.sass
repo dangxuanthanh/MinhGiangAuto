@@ -9,12 +9,12 @@ footer
 		position: relative
 		.block_title
 			.title
-				h2
+				.text-white
 					font-size: 3rem
 		.flow
 			display: flex
 			justify-content: center
-		.subsrcibe
+		.subscribe
 			cursor: pointer
 			.subscribefrm
 				height: 5rem
@@ -46,9 +46,20 @@ footer
 					display: flex 
 					justify-content: center
 					align-items: center
-					span
+					// position: relative
+					&::before
+						font-family: 'remixicon' !important
+						content: "\f0d8"
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						z-index: 11
+						// background:
 						font-size: 2rem
 						color: #cc003e
+
+					// span
 		.footer-card
 			padding-top: 40px
 			padding-bottom: 40px

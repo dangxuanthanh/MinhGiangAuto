@@ -12,7 +12,7 @@
 	<xsl:template match="News">
 		<div class="block_title column-center">
 			<div class="title">
-				<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h2>
+				<h3><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h3>
 			</div>
 		</div>
 		<div class="x-auto">

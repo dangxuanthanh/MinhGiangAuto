@@ -1,0 +1,12 @@
+.fa-dollar-sign:before{content:'\f155'}.fa-check:before{content:'\f00c'}.fa-phone-alt:before{content:'\f879'}.fa-reply:before{content:'\f3e5'}.san-pham-ct .product-wrapper .brief-icon .item{display:flex;align-items:center;margin-bottom:10px}.san-pham-ct .product-wrapper .brief{margin-bottom:10px}.san-pham-ct .product-wrapper .brief-icon .item .content p{font-size:14px;font-weight:700;color:#333}.san-pham-ct .product-wrapper .brief-icon .item .content p span{font-size:14px;font-weight:400;color:#333}.san-pham-ct .product-wrapper .icon{width:40px;height:40px;background:#fff;border:1px solid #ac1f23;color:#ac1f23;font-weight:700;font-size:15px;border-radius:50%;display:flex;justify-content:center;align-items:center;margin-right:15px}.home-search .search-wrap .btn-search a{padding:20px 160px}.thu-vien .list-item .image .active img{opacity:1}@media (max-width:480px){.home-tintuc .slide .swiper-wrapper .swiper-slide figure .img img{height:170px!important}}.link-to-section .cards:hover .card-image a img{max-height:210px}.link-to-section .cards .card-image a img{max-height:210px}.link-to-section .cards:hover .card-image a img{-webkit-transform:none!important;-ms-transform:none!important;transform:none!important}.thu-vien .list-item .image .active{padding-top:71.35416666667%;display:block;position:relative;overflow:hidden}.thu-vien .list-item .image .active img{position:absolute;width:100%;height:100%;top:0;left:0;object-fit:cover;transition:.2s ease-in-out all}
+footer .logo-footer p {
+	margin-bottom: 20px;
+}
+footer .logo-footer .main-slide-bottom-2{
+	margin-top: 20px;
+}
+footer .logo-footer .image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
